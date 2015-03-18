@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[gaoyangxiaozhu's blog]]></title>
+  <subtitle><![CDATA[我相信总有一天我会到达我希望的......]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2015-03-18T06:04:18.599Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name><![CDATA[高阳阳]]></name>
+    <email><![CDATA[1456543560@qq.com]]></email>
+  </author>
+  
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[实习这点事儿]]></title>
+    <link href="http://yoursite.com/2015/03/12/%E5%AE%9E%E4%B9%A0%E8%BF%99%E7%82%B9%E4%BA%8B%E5%84%BF/"/>
+    <id>http://yoursite.com/2015/03/12/实习这点事儿/</id>
+    <published>2015-03-12T04:25:51.000Z</published>
+    <updated>2015-03-18T06:03:59.000Z</updated>
+    <content type="html"><![CDATA[<p>两个月的实习生涯就要结束了，其实还是有点不舍的，如果不是因为蛋疼的毕业设计，很希望自己能在这边多留一段时间，现在打算趁热打铁，写一点留念的东西…</p>
+<p>先说说遇到的人吧</p>
+<p>第一个见面的就是小老板蒋大大了，也是他电话面试的我，我当时自己一个人拉了个行李箱在环铁城内转了一圈也没找到公司的方位，他就骑着自己的电动摩托车来接我了。<br>蒋大大的声音很好听，沉稳冷静，只听他说话就能感觉这个人很靠谱，没见面之前一直以为他也30出头了。后来看到一个长的白白净净的书生嬉笑着骑着电动车过来的时候，我还以为是另一个实习生了。<br>蒋大大是89年的，本科在华科，后来申请去了英国的爱丁堡大学攻读研究生，听说最后其毕业论文获得了什么大奖，总之是很流弊的了。后来回国后去了三星亚洲研究院工作了半年，最后不喜欢拘束的他毅然辞职和大老板来北京创业了。<br>他是一个技术牛人，但不像我们这行很多其他的牛人一样宅，他很善于交际，后来在他的影响下，我也有幸认识了许多艺术界的朋友。<br>然后就是大老板杨大大了。<br>坐着蒋大大的车快到门口的时候，就看见他站在门外面，印象中他拿着个水杯，穿着一身紫色的睡衣，然后我抬头，他冲我一笑。我的第一印象就这样产生了：这个是大老板了。是的，杨大大给人的第一感觉就是这个人是做生意的，很有老板相，我当时心里估摸着杨大大应该是有30的人了,呵呵,感觉自己有点年龄八卦。<br>后来才知道他和蒋老板是华科的同班同学，都是89年。恩….该怎么说呢…..<br>杨老板也是在英国读的研究生，是在利物浦，然后现在还在读博士，他在国内只呆了两个礼拜左右的时间，由于还在读博士期间，就回英国了，当然了， 也是为了发展英国方面的业务咯。虽然接触的时间不多，但还是要说下杨老板最给我的总体印象——-实诚。<br>对的，就是实诚。完全颠覆了我关于生意人的观念。也是因为这个品格，跟着他做事，放心！</p>
+<p>后来随着进入了两个老板的社交圈里，我也认识或者熟悉了许多搞艺术的朋友。其中接触最多的就是海大画家了。恩…不是因为他画画很流弊，虽然确实很流弊，而是因为——他做饭很流弊。<br>实习期间，蒋老板经常带我去他家曾饭吃，我当然也很乐意去啊，毕竟我们两个做饭的话,只能呵呵了….</p>
+<p>关于工作呢</p>
+<p>这个其实没什么好说的。第一周基本是自己在学习:模板、语言、插件，后来便投入到项目工作中去了。工作节奏还是比较快的，当然啦，有时候也比较闲，可以自己系统学习一些新的在项目中运用到的知识。其实感觉工作中最大的收获是学会阅读官方文档，最大的感悟就是以后要用google搜索！<br>工作中接触到的知识挺多的:django,stylus,coffee,gulp,git,bootstrap等等，这里就不多说了，自己现在也只是会使用但不精通，打算以后多多实践，做到熟而精。</p>
+<p>总结</p>
+<p>哈，其实不知道怎么写总结了。总之，老板人不错，大家如果谁搞前端的话，可以去哦！然后呢，还能认识很多艺术家们…<br>也希望自己新的新年在前端上取得更好的成绩啊，哈哈！</p>
+<p><img src="/imgs/flighting.jpg" alt="flighting"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>两个月的实习生涯就要结束了，其实还是有点不舍的，如果不是因为蛋疼的毕业设计，很希望自己能在这边多留一段时间，现在打算趁热打铁，写一点留念的东西…</p>
+<p>先说说遇到的人吧</p>
+<p>第一个见面的就是小老板蒋大大了，也是他电话面试的我，我当时自己一个人拉了个行李箱在]]>
+    </summary>
+    
+      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="思考" scheme="http://yoursite.com/tags/%E6%80%9D%E8%80%83/"/>
+    
+      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[关于running-man]]></title>
+    <link href="http://yoursite.com/2015/02/20/%E5%85%B3%E4%BA%8Erunning-man/"/>
+    <id>http://yoursite.com/2015/02/20/关于running-man/</id>
+    <published>2015-02-20T11:57:56.000Z</published>
+    <updated>2015-03-18T05:55:03.000Z</updated>
+    <content type="html"><![CDATA[<p></p><p> 我看running-man其实也就一年左右的时间，但它给我带来了很多的欢乐 ，也改变了我的关于综艺和韩国媒体文化的态度。<br>    先说下曾经的我，说是曾经，其实也就是最多一年前的我， 关于综艺和韩国的态度。</p><p></p>
+<p></p><p> 我一直不太喜欢韩国，当然我也并不了解韩国，我的不喜欢的原因很简单，和大多数其他的”中国好男儿”一样:认为韩国的男的不像是男的，为什么就是能赢得大陆女孩的喜欢和追捧… 然后又和大家一样，看见周围哪个男同胞在看韩国电视剧或者综艺节目的话，就报以不屑的态度，还讽刺的来一句:”看棒子呢！”。现在想来，自己当时连一部完整的韩国电视剧都没有看过，一期韩国综艺也没了解过，就以一种我是中国人的姿态站在了反对韩流媒体文化的高地上，想来真是有点可笑了..呵呵..</p><p></p>
+<p></p><p> 我也不喜欢看综艺节目，有一段时间还是挺喜欢看湖南电视台的“快乐大本营”的，但看了没多久，就厌烦了，单调的节目形式和在演播室里的重复性的逗乐表演，让我失去了胃口。现在回想，其实当时的我看“快乐大本营”也并非完全是由于觉得这个综艺节目的形式很好，而更多的也和我喜欢的嘉宾有关，比如如果我知道成龙来快乐大本营了，我就会去看。如果换成其他嘉宾的话，我就要看当时的点击率和心情了。</p><p></p>
+<p></p><p> 看running-man，完全颠覆了我关于综艺节目的概念，原来综艺还可以这么玩！也让我慢慢试着去了解了更多的韩国媒体文化，让我慢慢喜欢上了韩国。</p><p></p>
+<p></p><p> running-man是韩国SBS公司旗下的一档综艺节目，和我一样的run迷们一定都知道，不知道的朋友们也可以去试着看一期，很有看点。我也是在女朋友的怂恿下，陪她看了一期，然后就不能自拔，喜欢上了这个节目。后来一年的大部分娱乐时间，基本上也都是running-man陪我度过了。running-man的综艺表演形式很有真实性，7个个性鲜明的主持人和不定期参与的嘉宾一起进行游戏，通过游戏角逐出最后的胜者。<br>  之所以喜欢这个节目，原因有很多。<br>  节目内容的真实性，每期内容的不确定性，还有游戏的刺激性都是吸引我的主要原因，但最重要的还是因为7个个性鲜明的主持人，也是因为他们让整个节目变得很具有吸引力和笑点。<br>  刘在石(蚂蚱)的智慧和独特的主持风格，池石镇(王大鼻子)的坚韧，金钟国(能力者)的power，HaHa的逗比式的夸张，宋智孝的呆萌和智慧，Gray的细致，还有李光洙(长颈鹿)的搞笑。每个人各有特色，在整个节目过程中都是主角，不可或缺。感觉这也是韩国综艺的一个优点，每一个都是主角，没有谁是主导，也没有谁是陪衬，看着很舒服。<br>通过running-man，我喜欢上了韩国的综艺，也开始慢慢去了解和欣赏韩国的影视节目，发现韩国的娱乐确实是做得比较好的，也值得我们国内的娱乐和综艺节目参考。</p><br>running-man在这一年给予了我很多快乐，会一直看下去。也希望这个节目能走的更久!<p></p>
+<div style="display:inline-block;width:100%"><br><div style="float:left;width:30%;"><br><img src="/imgs/running-1.png" alt="flighting"><br></div><br><div style="float:left;width:30%;position:relative;top:-29px;"><br><img src="/imgs/running-2.png" alt="flighting"><br></div><br><div style="float:left;width:30%;position:relative;top:-50px;"><br><img src="/imgs/running-3.png" alt="flighting"><br></div><br><div style="float:left;width:30%;"><br><img src="/imgs/running-4.png" alt="flighting"><br></div><br><div style="float:left;width:30%"><br><img src="/imgs/running-5.png" alt="flighting"><br></div><br><div style="float:left;width:30%;"><br><img src="/imgs/running-6.png" alt="flighting"><br></div><br><div style="width:30%;"><br><img src="/imgs/running-7.png" alt="flighting"><br></div><br><div clear="both"><br></div>
+</div>]]></content>
+    <summary type="html">
+    <![CDATA[<p></p><p> 我看running-man其实也就一年左右的时间，但它给我带来了很多的欢乐 ，也改变了我的关于综艺和韩国媒体文化的态度。<br>    先说下曾经的我，说是曾经，其实也就是最多一年前的我， 关于综艺和韩国的态度。</p><p></p>
+<p></p><p> ]]>
+    </summary>
+    
+      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="思考" scheme="http://yoursite.com/tags/%E6%80%9D%E8%80%83/"/>
+    
+      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[外部CSS样式的读取和设定]]></title>
+    <link href="http://yoursite.com/2014/12/30/%E5%A4%96%E9%83%A8CSS%E6%A0%B7%E5%BC%8F%E7%9A%84%E8%AF%BB%E5%8F%96%E5%92%8C%E8%AE%BE%E5%AE%9A/"/>
+    <id>http://yoursite.com/2014/12/30/外部CSS样式的读取和设定/</id>
+    <published>2014-12-30T12:34:19.000Z</published>
+    <updated>2015-03-18T05:55:03.000Z</updated>
+    <content type="html"><![CDATA[<p>好久没有写博客了，是不是太懒了我?</p>
+<p>最近练习原生javascript时，其中有一次需要获取外部CSS样式文件中的相应元素的样式。不熟悉CSS样式的童鞋可能会尝试通过使用如document.getElementById(“id”).style.color来获取属性中设置的样式。<a id="more"></a>但这种方法只会获取元素style属性中设置的CSS样式，如果style中没有设置相关的样式,如color,那么document.getElementById(“id”).style方法的返回值就是空。也就是说不能通过这种方法来获得外部样式表中设置的样式.那怎样才能夺取外部样式呢?<br>如果要获取外部样式表中的样式,则需要用到window对象的getComputedStyle()方法。代码写法：getComputedStyle(id,null).color.但是可能会出现兼容问题，即在ie中可能不好使。两者兼容的写法为：<br>window.getComputedStyle?window.getComputedStyle(id,null).backgroundColor:id.currentStyle[“backgroundColor”];</p>
+<p>是不是很简单呢,主要为了加深记忆，顺便练手了~</p> ]]></content>
+    <summary type="html">
+    <![CDATA[<p>好久没有写博客了，是不是太懒了我?</p>
+<p>最近练习原生javascript时，其中有一次需要获取外部CSS样式文件中的相应元素的样式。不熟悉CSS样式的童鞋可能会尝试通过使用如document.getElementById(“id”).style.color来获取属性中设置的样式。]]>
+    
+    </summary>
+    
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+    
+      <category term="CSS" scheme="http://yoursite.com/categories/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[依旧是小渣~]]></title>
+    <link href="http://yoursite.com/2014/11/28/%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B/"/>
+    <id>http://yoursite.com/2014/11/28/新的开始/</id>
+    <published>2014-11-28T04:21:50.000Z</published>
+    <updated>2015-03-18T05:55:03.000Z</updated>
+    <content type="html"><![CDATA[<p> 10月份保研结束后，由于打算以后向着web前端研发的方向发展，所以就开始看了许多关于前端的书籍,两遍的<span style="color:blue;">Javascrit_Dom编程艺术</span>、<span style="color:blue;">锋利的jQuery</span>、<span style="color:blue">JavaScript高级程序设计</span>等和一些讲解利用DIV+CSS编程思想的书籍.<a id="more"></a>一个多月的时间，自己也练习了很多，利用div+css的思想写过一些小的前端程序，偶尔也逛逛博客……两个礼拜前自己还自以为自己前端已经学的很不错了呢，直到一个偶然的机会自己逛到了<a href="http://lingyu.wang/" target="_blank" rel="external">天嚷</a>大神的博客，当时被他的博客的设计风格吸引了，无知的自己留言问他博客的后台是什么(纯粹为了留下来过的痕迹),然后从他的回答才知道他是挂载在github上使用hexo生成的纯静态的页面，没有后台。当时不知道hexo是什么东西，我就开始在网上查关于hexo的信息，然后就不能自己，果断放弃了自己以前注册在博客园的博客，花了两天时间搭建了这个博客，利用的是pacman主题风格，并进行了一些修改，而天壤大神的博客主题则完全是自己设计，自己现在只有仰慕的份儿。</p>
+<p> 搭建这个博客的过程自己学了许多，发现自己以前连现在最流行也是最基础的用于快速构建web应用的node.js都不知道，不会git,不会less，不会使用Bootstrap.只会简单的使用javascript,jquery.感慨自己现在是个小渣的同时也很是欣慰，因为有了新的对于前端技术的认识，知道还有很多新鲜的知识等着我去探索和掌握，不用担心没什么可学了，嘿嘿。</p>
+<p> 虽然现在已经明白要成为一个优秀的前端研发工程师的路还很长，但给自己的只有四个字:”快乐 加油”！</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p> 10月份保研结束后，由于打算以后向着web前端研发的方向发展，所以就开始看了许多关于前端的书籍,两遍的<span style="color:blue;">Javascrit_Dom编程艺术</span>、<span style="color:blue;">锋利的jQuery</span>、<span style="color:blue">JavaScript高级程序设计</span>等和一些讲解利用DIV+CSS编程思想的书籍.]]>
+    
+    </summary>
+    
+      <category term="日记" scheme="http://yoursite.com/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+      <category term="思考" scheme="http://yoursite.com/categories/%E6%80%9D%E8%80%83/"/>
+    
+  </entry>
+  
+</feed>
