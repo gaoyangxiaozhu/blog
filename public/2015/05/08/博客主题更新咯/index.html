@@ -1,0 +1,82 @@
+<html lang="en"><head><meta charset="utf-8"/><title>博客主题更新咯 |gaoyangxiaozhu's blog</title><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1"/><meta name="author" content="高阳阳"/><meta name="description" itemprop="description" content="undefined"/><link rel="icon" href="/img/myFavicon.ico"/><link rel="stylesheet" href="/css/style.css"/></head><body><header><div id="pageHeader"><div id="imglogo"><a href="/"><img src="/img/myLogo.png" alt="gaoyangxiaozhu's blog" title="gaoyangxiaozhu's blog"/></a></div><div id="textlogo"><h1 class="site-name"><a href="/" title="gaoyangxiaozhu's blog"> gaoyangxiaozhu's blog</a></h1></div><div class="icon"><a href="http://weibo.com/5313420647" target="_blank" class="icon-weibo"></a><a href="https://github.com/gaoyangxiaozhu" target="_blank" class="icon-github"></a><a href="https://www.facebook.com/gyyzyp" target="_blank" class="icon-facebook"></a><a href="/atom.xml" target="_blank" class="icon-rss"></a></div><div class="navbar"><a href="#" title="菜单" class="navbutton navmobile"></a></div><nav class="animated"><ul class="clearfix"><li><a href="/"> 主页</a></li><li><a href="/archives"> 归档</a></li><li><a href="/page/resume.html"> 关于我</a></li></ul></nav></div></header><div id="container"><div id="main" itemscope="itemscope" itemprop="blogPost" class="post"><article itemprop="articleBody"><header class="article-info clearfix"><h1 itemprop="name"><a href="/2015/05/08/博客主题更新咯/" title="博客主题更新咯" itemprop="url">博客主题更新咯</a></h1></header><div class="article-content"><div id="toc" class="toc-article"><strong class="toc-title">文章目录</strong><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#别人的东西总是不适合自己啊"><span class="toc-number">1.</span> <span class="toc-text">别人的东西总是不适合自己啊</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#我的博客主题-glove"><span class="toc-number">2.</span> <span class="toc-text">我的博客主题-glove</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CDN和七牛的使用"><span class="toc-number">3.</span> <span class="toc-text">CDN和七牛的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#再接再厉"><span class="toc-number">4.</span> <span class="toc-text">再接再厉</span></a></li></ol></div><p>我是去年十月份左右才开始使用hexo来构建博客的，当时还没有能力自己写一个博客主题，在选择其他大牛写的主题选择上纠结了许久，最后选择了A-limon的<a href="https://github.com/A-limon/pacman" target="_blank" rel="external">pacman</a>主题，pacman主题响应性很好，在各种设备上都能呈现出很不错的视觉体验，而且它扁平化的设计风格给人眼前一亮。然而，好景不长，处女座的挑剔就又开始上来闹腾了。</p>
+<h2 id="别人的东西总是不适合自己啊">别人的东西总是不适合自己啊</h2>
+<p>虽然pacman的主题确实不是不错，但是总感觉不是用来写技术的博客，更像是为那些个文人墨客准备的，太过于小清晰咯。或者更主要的原因来说，不是自己的feel，总感觉和自己的个性不搭。而其他主题感觉也不适合自己。然后再加上自己也打算向着前端发展，所以就趁着最近的空闲时间开始着手写自己的博客主题了。</p>
+<h2 id="我的博客主题-glove">我的博客主题-glove</h2>
+<p>写glove这个主题花了大概一个礼拜的时间，对于我这个前端的新手也说也是一种锻炼。博客的风格借鉴了很多其他主题的样式，其中导航栏和博客整体的颜色搭配上主要是借鉴了我的前端偶像<a href="http://lingyu.wang" target="_blank" rel="external">天壤大神</a>的博客的风格，如果哪天大神不小心进来看到了，还请原谅小弟盗用啊，嘿嘿。整个模板是使用jade实现的（自己早已被jade的语法规则深深折服不能自拔），样式则是使用了stylus实现。glove主题的源码已经放在了我的<a href="https://github.com/gaoyangxiaozhu/glove-theme" target="_blank" rel="external">github</a>上，如果有喜欢的人，可以clone下使用哦（不知道会不会出现bug额）。我有时间也会进一步完善的。</p>
+<h2 id="CDN和七牛的使用">CDN和七牛的使用</h2>
+<p>最初使用hexo构建博客，使用的是User &amp; Organization Pages的方式，仓库必须命名为XXXX.github.io的形式。自己购买了域名后，在DNS配置指向了github。在后来的页面访问过程中总是出现页面刷不出来的现象，通过Network查看，发现gyyzyp.com就算是status为200也总会跳转到gaoyangxiaozhu.githu.io，然后gaoyangxiaozhu.github.io又会重定向(301 or 302)到gyyzyp.com,这样无限循环下去。后来为了能自定义自己的博客的仓库名，同时也是为了尝试解决页面刷不出来的问题。我采用了Project Pages的方式来在github上构建自己的页面，build后的静态页面位于仓库的gh-pages分支上，仓库简单命名为了blog。然后通过gyyzyp.com访问博客就不再出现刷不出来的现象了。 然后，为了进一步的提高博客的访问速度和访客体验，我通过七牛的cdn来加载了使用jquery库文件，并将一些静态文件如图片能放在了七牛的云空间上加载(虽然现在基本就没人关注我的博客呢)。</p>
+<h2 id="再接再厉">再接再厉</h2>
+<p>最近要忙着搞毕业设计，空余时间也并不多了。所以打算把<span style="color:blue;">javascript权威指南</span>看下，然后试着自己开始用jquery写几个小插件练练手。加油！！</p>
+</div><footer class="article-footer clearfix"><div class="article-tags"><a href="/tags/HTML/">HTML</a><a href="/tags/CSS/">CSS</a></div><div class="article-categories"><a class="article-category-link" href="/categories/思考总结/">思考总结</a></div></footer></article><nav class="article-nav clearfix"><a href="/2015/04/04/node.js开发指南中的microblog程序/" title="node.js开发指南中的microblog程序" class="next">node.js开发指南中的microblog程序</a></nav><section class="comment"><div class="ds-thread"></div></section></div><div id="asidepart"><aside class="clearfix"><div class="recentlist"><p class="asidetitle">最新文章<span></span></p><ul class="post"><li class="post-list-item"><a href="/2015/05/08/博客主题更新咯/">博客主题更新咯</a></li><li class="post-list-item"><a href="/2015/04/04/node.js开发指南中的microblog程序/">node.js开发指南中的microblog程序</a></li><li class="post-list-item"><a href="/2015/03/12/实习这点事儿/">实习这点事儿</a></li><li class="post-list-item"><a href="/2015/02/20/关于running-man/">关于running-man</a></li><li class="post-list-item"><a href="/2014/12/30/外部CSS样式的读取和设定/">外部CSS样式的读取和设定</a></li><li class="post-list-item"><a href="/2014/11/28/新的开始/">依旧是小渣~</a></li></ul></div><div class="categorieslist"><p class="asidetitle">分类<span></span></p><ul class="clearfix"><li><a href="/categories/CSS/" title="CSS">CSS
+(1)</a></li><li><a href="/categories/node/" title="node">node
+(1)</a></li><li><a href="/categories/思考/" title="思考">思考
+(1)</a></li><li><a href="/categories/思考总结/" title="思考总结">思考总结
+(1)</a></li><li><a href="/categories/生活/" title="生活">生活
+(2)</a></li></ul></div><div class="tagslist"><p class="asidetitle">标签<span></span></p><ul class="clearfix"><li><a href="/tags/CSS/" title="CSS">CSS<sup>2</sup></a></li><li><a href="/tags/HTML/" title="HTML">HTML<sup>1</sup></a></li><li><a href="/tags/node-js/" title="node.js">node.js<sup>1</sup></a></li><li><a href="/tags/思考/" title="思考">思考<sup>2</sup></a></li><li><a href="/tags/日记/" title="日记">日记<sup>1</sup></a></li><li><a href="/tags/生活/" title="生活">生活<sup>2</sup></a></li></ul></div><div class="tagcloudlist"><p class="asidetitle">标签云<span></span></p><div class="archiveslist clearfix"><a href="/tags/CSS/" style="font-size: 20.00px;">CSS</a><a href="/tags/HTML/" style="font-size: 10.00px;">HTML</a><a href="/tags/node-js/" style="font-size: 10.00px;">node.js</a><a href="/tags/思考/" style="font-size: 20.00px;">思考</a><a href="/tags/日记/" style="font-size: 10.00px;">日记</a><a href="/tags/生活/" style="font-size: 20.00px;">生活</a></div></div><div class="archiveslist"><p class="asidetitle"><a href="/archives">归档</a><span></span></p><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">2015年05月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">2015年04月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">2015年03月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">2015年02月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">2014年12月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">2014年11月</a><span class="archive-list-count">1</span></li></ul></div><div class="linkslist"><p class="asidetitle">友情链接</p><ul><li><a href="http://www.cnblogs.com/xiaozhuyang/p/" target="_blank" title="oldblog"><strong>博客旧址</strong></a></li></ul></div></aside></div></div><footer><div id="footer"><p class="copyright">Powered by
+&nbsp;<a href="http://hexo.io" target="_blank" title="hexo">Hexo</a>&nbsp;
+and Theme by
+&nbsp;<a href="https://github.com/gaoyangxiaozhu" target="_blank" title="gyy-theme">gaoyangxiaozhu
+©2015</a></p></div></footer><a id="toTop" href="#pageHeader" class="icon-up"></a><script src="http://cdn.staticfile.org/jquery/2.1.1-rc2/jquery.min.js"></script><script type="text/javascript">$(document).ready(function(){
+    $('.navbar').click(function(){
+        $('header nav').toggleClass('shownav');
+    });
+var myWidth = 0;
+function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+        myWidth = window.innerWidth;
+} else if( document.documentElement && document.documentElement.clientWidth) {
+myWidth = document.documentElement.clientWidth;
+};
+};
+var m = $('#main'),
+a = $('#asidepart');
+$(window).resize(function(){
+    getSize();
+    if (myWidth >= 1024) {
+        $('header nav').removeClass('shownav');
+}else
+{
+    m.removeClass('moveMain');
+    a.css('display', 'block').removeClass('fadeOut');
+}
+});
+});</script><script type="text/javascript">$(document).ready(function(){
+    var ai = $('.article-content>iframe'),
+            ae = $('.article-content>embed'),
+            t = $('#toc'),
+            h = $('article h2')
+            ah = $('article h2'),
+            ta = $('#toc.toc-aside');
+
+    if(ai.length > 0){
+        ai.wrap('<div class="video-container" />');
+    };
+    if(ae.length > 0){
+        ae.wrap('<div class="video-container" />');
+    };
+    if(ah.length == 0){
+        t.css('display','none');
+    }
+    $(window).scroll(function(){
+        ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+});</script><script type="text/javascript">var duoshuoQuery = {short_name:"<%= theme.duoshuo.short_name %>"};
+(function() {
+var ds = document.createElement('script');
+ds.type = 'text/javascript';ds.async = true;
+ds.src = '//static.duoshuo.com/embed.js';
+ds.charset = 'UTF-8';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();</script><script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', '<%= theme.google_analytics.id %>', '<%= theme.google_analytics.site %>');
+ga('send', 'pageview');</script><!-- 多说公共JS代码 start (一个网页只需插入一次) --><script type="text/javascript">var duoshuoQuery = {short_name:"gaoyangxiaozhu"};
+(function() {
+var ds = document.createElement('script');
+ds.type = 'text/javascript';ds.async = true;
+ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+ds.charset = 'UTF-8';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();</script><!-- 多说公共JS代码 end --></body></html>

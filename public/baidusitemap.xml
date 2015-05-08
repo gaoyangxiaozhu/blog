@@ -3,6 +3,39 @@
 
     
   <url>
+    <loc>http://gyyzyp.com/2015/05/08/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0%E5%92%AF/</loc>
+    <lastmod>2015-05-08T14:32:32.000Z</lastmod>
+    <data>
+        <display>
+        <title>博客主题更新咯</title>
+        <pubTime>2015-05-08T11:57:56.000Z</pubTime>
+        
+        <tag>HTML </tag>
+         
+        <tag>CSS </tag>
+         
+         <content><![CDATA[<p>我是去年十月份左右才开始使用hexo来构建博客的，当时还没有能力自己写一个博客主题，在选择其他大牛写的主题选择上纠结了许久，最后选择了A-limon的<a href="https://github.com/A-limon/pacman" target="_blank" rel="external">pacman</a>主题，pacman主题响应性很好，在各种设备上都能呈现出很不错的视觉体验，而且它扁平化的设计风格给人眼前一亮。然而，好景不长，处女座的挑剔就又开始上来闹腾了。</p>
+<h2 id="别人的东西总是不适合自己啊">别人的东西总是不适合自己啊</h2>
+<p>虽然pacman的主题确实不是不错，但是总感觉不是用来写技术的博客，更像是为那些个文人墨客准备的，太过于小清晰咯。或者更主要的原因来说，不是自己的feel，总感觉和自己的个性不搭。而其他主题感觉也不适合自己。然后再加上自己也打算向着前端发展，所以就趁着最近的空闲时间开始着手写自己的博客主题了。</p>
+<h2 id="我的博客主题-glove">我的博客主题-glove</h2>
+<p>写glove这个主题花了大概一个礼拜的时间，对于我这个前端的新手也说也是一种锻炼。博客的风格借鉴了很多其他主题的样式，其中导航栏和博客整体的颜色搭配上主要是借鉴了我的前端偶像<a href="http://lingyu.wang" target="_blank" rel="external">天壤大神</a>的博客的风格，如果哪天大神不小心进来看到了，还请原谅小弟盗用啊，嘿嘿。整个模板是使用jade实现的（自己早已被jade的语法规则深深折服不能自拔），样式则是使用了stylus实现。glove主题的源码已经放在了我的<a href="https://github.com/gaoyangxiaozhu/glove-theme" target="_blank" rel="external">github</a>上，如果有喜欢的人，可以clone下使用哦（不知道会不会出现bug额）。我有时间也会进一步完善的。</p>
+<h2 id="CDN和七牛的使用">CDN和七牛的使用</h2>
+<p>最初使用hexo构建博客，使用的是User &amp; Organization Pages的方式，仓库必须命名为XXXX.github.io的形式。自己购买了域名后，在DNS配置指向了github。在后来的页面访问过程中总是出现页面刷不出来的现象，通过Network查看，发现gyyzyp.com就算是status为200也总会跳转到gaoyangxiaozhu.githu.io，然后gaoyangxiaozhu.github.io又会重定向(301 or 302)到gyyzyp.com,这样无限循环下去。后来为了能自定义自己的博客的仓库名，同时也是为了尝试解决页面刷不出来的问题。我采用了Project Pages的方式来在github上构建自己的页面，build后的静态页面位于仓库的gh-pages分支上，仓库简单命名为了blog。然后通过gyyzyp.com访问博客就不再出现刷不出来的现象了。 然后，为了进一步的提高博客的访问速度和访客体验，我通过七牛的cdn来加载了使用jquery库文件，并将一些静态文件如图片能放在了七牛的云空间上加载(虽然现在基本就没人关注我的博客呢)。</p>
+<h2 id="再接再厉">再接再厉</h2>
+<p>最近要忙着搞毕业设计，空余时间也并不多了。所以打算把<span style="color:blue;">javascript权威指南</span>看下，然后试着自己开始用jquery写几个小插件练练手。加油！！</p>
+]]></content>
+         
+         
+           
+             
+              <breadCrumb title="思考总结" url="http://gyyzyp.com/categories/%E6%80%9D%E8%80%83%E6%80%BB%E7%BB%93/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://gyyzyp.com/2015/03/12/%E5%AE%9E%E4%B9%A0%E8%BF%99%E7%82%B9%E4%BA%8B%E5%84%BF/</loc>
     <lastmod>2015-05-08T08:03:20.000Z</lastmod>
     <data>
@@ -36,6 +69,30 @@
 
     
   <url>
+    <loc>http://gyyzyp.com/2014/12/30/%E5%A4%96%E9%83%A8CSS%E6%A0%B7%E5%BC%8F%E7%9A%84%E8%AF%BB%E5%8F%96%E5%92%8C%E8%AE%BE%E5%AE%9A/</loc>
+    <lastmod>2015-05-08T08:03:20.000Z</lastmod>
+    <data>
+        <display>
+        <title>外部CSS样式的读取和设定</title>
+        <pubTime>2014-12-30T12:34:19.000Z</pubTime>
+        
+        <tag>CSS </tag>
+         
+         <content><![CDATA[<p>好久没有写博客了，是不是太懒了我?</p>
+<p>最近练习原生javascript时，其中有一次需要获取外部CSS样式文件中的相应元素的样式。不熟悉CSS样式的童鞋可能会尝试通过使用如document.getElementById(“id”).style.color来获取属性中设置的样式。<a id="more"></a>但这种方法只会获取元素style属性中设置的CSS样式，如果style中没有设置相关的样式,如color,那么document.getElementById(“id”).style方法的返回值就是空。也就是说不能通过这种方法来获得外部样式表中设置的样式.那怎样才能夺取外部样式呢?<br>如果要获取外部样式表中的样式,则需要用到window对象的getComputedStyle()方法。代码写法：getComputedStyle(id,null).color.但是可能会出现兼容问题，即在ie中可能不好使。两者兼容的写法为：<br>window.getComputedStyle?window.getComputedStyle(id,null).backgroundColor:id.currentStyle[“backgroundColor”];</p>
+<p>是不是很简单呢,主要为了加深记忆，顺便练手了~</p> ]]></content>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://gyyzyp.com/categories/CSS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://gyyzyp.com/2014/11/28/%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B/</loc>
     <lastmod>2015-05-08T08:03:20.000Z</lastmod>
     <data>
@@ -54,36 +111,6 @@
            
              
               <breadCrumb title="思考" url="http://gyyzyp.com/categories/%E6%80%9D%E8%80%83/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://gyyzyp.com/2015/02/20/%E5%85%B3%E4%BA%8Erunning-man/</loc>
-    <lastmod>2015-05-08T08:03:20.000Z</lastmod>
-    <data>
-        <display>
-        <title>关于running-man</title>
-        <pubTime>2015-02-20T11:57:56.000Z</pubTime>
-        
-        <tag>生活 </tag>
-         
-        <tag>思考 </tag>
-         
-         <content><![CDATA[<p></p><p> 我看running-man其实也就一年左右的时间，但它给我带来了很多的欢乐 ，也改变了我的关于综艺和韩国媒体文化的态度。<br>    先说下曾经的我，说是曾经，其实也就是最多一年前的我， 关于综艺和韩国的态度。</p><p></p>
-<p></p><p> 我一直不太喜欢韩国，当然我也并不了解韩国，我的不喜欢的原因很简单，和大多数其他的”中国好男儿”一样:认为韩国的男的不像是男的，为什么就是能赢得大陆女孩的喜欢和追捧… 然后又和大家一样，看见周围哪个男同胞在看韩国电视剧或者综艺节目的话，就报以不屑的态度，还讽刺的来一句:”看棒子呢！”。现在想来，自己当时连一部完整的韩国电视剧都没有看过，一期韩国综艺也没了解过，就以一种我是中国人的姿态站在了反对韩流媒体文化的高地上，想来真是有点可笑了..呵呵..</p><p></p>
-<p></p><p> 我也不喜欢看综艺节目，有一段时间还是挺喜欢看湖南电视台的“快乐大本营”的，但看了没多久，就厌烦了，单调的节目形式和在演播室里的重复性的逗乐表演，让我失去了胃口。现在回想，其实当时的我看“快乐大本营”也并非完全是由于觉得这个综艺节目的形式很好，而更多的也和我喜欢的嘉宾有关，比如如果我知道成龙来快乐大本营了，我就会去看。如果换成其他嘉宾的话，我就要看当时的点击率和心情了。</p><p></p>
-<p></p><p> 看running-man，完全颠覆了我关于综艺节目的概念，原来综艺还可以这么玩！也让我慢慢试着去了解了更多的韩国媒体文化，让我慢慢喜欢上了韩国。</p><p></p>
-<p></p><p> running-man是韩国SBS公司旗下的一档综艺节目，和我一样的run迷们一定都知道，不知道的朋友们也可以去试着看一期，很有看点。我也是在女朋友的怂恿下，陪她看了一期，然后就不能自拔，喜欢上了这个节目。后来一年的大部分娱乐时间，基本上也都是running-man陪我度过了。running-man的综艺表演形式很有真实性，7个个性鲜明的主持人和不定期参与的嘉宾一起进行游戏，通过游戏角逐出最后的胜者。<br>  之所以喜欢这个节目，原因有很多。<br>  节目内容的真实性，每期内容的不确定性，还有游戏的刺激性都是吸引我的主要原因，但最重要的还是因为7个个性鲜明的主持人，也是因为他们让整个节目变得很具有吸引力和笑点。<br>  刘在石(蚂蚱)的智慧和独特的主持风格，池石镇(王大鼻子)的坚韧，金钟国(能力者)的power，HaHa的逗比式的夸张，宋智孝的呆萌和智慧，Gray的细致，还有李光洙(长颈鹿)的搞笑。每个人各有特色，在整个节目过程中都是主角，不可或缺。感觉这也是韩国综艺的一个优点，每一个都是主角，没有谁是主导，也没有谁是陪衬，看着很舒服。<br>通过running-man，我喜欢上了韩国的综艺，也开始慢慢去了解和欣赏韩国的影视节目，发现韩国的娱乐确实是做得比较好的，也值得我们国内的娱乐和综艺节目参考。</p><br>running-man在这一年给予了我很多快乐，会一直看下去。也希望这个节目能走的更久!<p></p>
-<div style="display:inline-block;width:100%"><br><div style="float:left;width:30%;"><br><img src="/imgs/running-1.png" alt="flighting"><br></div><br><div style="float:left;width:30%;position:relative;top:-29px;"><br><img src="/imgs/running-2.png" alt="flighting"><br></div><br><div style="float:left;width:30%;position:relative;top:-50px;"><br><img src="/imgs/running-3.png" alt="flighting"><br></div><br><div style="float:left;width:30%;"><br><img src="/imgs/running-4.png" alt="flighting"><br></div><br><div style="float:left;width:30%"><br><img src="/imgs/running-5.png" alt="flighting"><br></div><br><div style="float:left;width:30%;"><br><img src="/imgs/running-6.png" alt="flighting"><br></div><br><div style="width:30%;"><br><img src="/imgs/running-7.png" alt="flighting"><br></div><br><div clear="both"><br></div>
-</div>]]></content>
-         
-         
-           
-             
-              <breadCrumb title="生活" url="http://gyyzyp.com/categories/%E7%94%9F%E6%B4%BB/"/>
           
         </display>
     </data>
@@ -114,23 +141,29 @@
 
     
   <url>
-    <loc>http://gyyzyp.com/2014/12/30/%E5%A4%96%E9%83%A8CSS%E6%A0%B7%E5%BC%8F%E7%9A%84%E8%AF%BB%E5%8F%96%E5%92%8C%E8%AE%BE%E5%AE%9A/</loc>
+    <loc>http://gyyzyp.com/2015/02/20/%E5%85%B3%E4%BA%8Erunning-man/</loc>
     <lastmod>2015-05-08T08:03:20.000Z</lastmod>
     <data>
         <display>
-        <title>外部CSS样式的读取和设定</title>
-        <pubTime>2014-12-30T12:34:19.000Z</pubTime>
+        <title>关于running-man</title>
+        <pubTime>2015-02-20T11:57:56.000Z</pubTime>
         
-        <tag>CSS </tag>
+        <tag>生活 </tag>
          
-         <content><![CDATA[<p>好久没有写博客了，是不是太懒了我?</p>
-<p>最近练习原生javascript时，其中有一次需要获取外部CSS样式文件中的相应元素的样式。不熟悉CSS样式的童鞋可能会尝试通过使用如document.getElementById(“id”).style.color来获取属性中设置的样式。<a id="more"></a>但这种方法只会获取元素style属性中设置的CSS样式，如果style中没有设置相关的样式,如color,那么document.getElementById(“id”).style方法的返回值就是空。也就是说不能通过这种方法来获得外部样式表中设置的样式.那怎样才能夺取外部样式呢?<br>如果要获取外部样式表中的样式,则需要用到window对象的getComputedStyle()方法。代码写法：getComputedStyle(id,null).color.但是可能会出现兼容问题，即在ie中可能不好使。两者兼容的写法为：<br>window.getComputedStyle?window.getComputedStyle(id,null).backgroundColor:id.currentStyle[“backgroundColor”];</p>
-<p>是不是很简单呢,主要为了加深记忆，顺便练手了~</p> ]]></content>
+        <tag>思考 </tag>
+         
+         <content><![CDATA[<p></p><p> 我看running-man其实也就一年左右的时间，但它给我带来了很多的欢乐 ，也改变了我的关于综艺和韩国媒体文化的态度。<br>    先说下曾经的我，说是曾经，其实也就是最多一年前的我， 关于综艺和韩国的态度。</p><p></p>
+<p></p><p> 我一直不太喜欢韩国，当然我也并不了解韩国，我的不喜欢的原因很简单，和大多数其他的”中国好男儿”一样:认为韩国的男的不像是男的，为什么就是能赢得大陆女孩的喜欢和追捧… 然后又和大家一样，看见周围哪个男同胞在看韩国电视剧或者综艺节目的话，就报以不屑的态度，还讽刺的来一句:”看棒子呢！”。现在想来，自己当时连一部完整的韩国电视剧都没有看过，一期韩国综艺也没了解过，就以一种我是中国人的姿态站在了反对韩流媒体文化的高地上，想来真是有点可笑了..呵呵..</p><p></p>
+<p></p><p> 我也不喜欢看综艺节目，有一段时间还是挺喜欢看湖南电视台的“快乐大本营”的，但看了没多久，就厌烦了，单调的节目形式和在演播室里的重复性的逗乐表演，让我失去了胃口。现在回想，其实当时的我看“快乐大本营”也并非完全是由于觉得这个综艺节目的形式很好，而更多的也和我喜欢的嘉宾有关，比如如果我知道成龙来快乐大本营了，我就会去看。如果换成其他嘉宾的话，我就要看当时的点击率和心情了。</p><p></p>
+<p></p><p> 看running-man，完全颠覆了我关于综艺节目的概念，原来综艺还可以这么玩！也让我慢慢试着去了解了更多的韩国媒体文化，让我慢慢喜欢上了韩国。</p><p></p>
+<p></p><p> running-man是韩国SBS公司旗下的一档综艺节目，和我一样的run迷们一定都知道，不知道的朋友们也可以去试着看一期，很有看点。我也是在女朋友的怂恿下，陪她看了一期，然后就不能自拔，喜欢上了这个节目。后来一年的大部分娱乐时间，基本上也都是running-man陪我度过了。running-man的综艺表演形式很有真实性，7个个性鲜明的主持人和不定期参与的嘉宾一起进行游戏，通过游戏角逐出最后的胜者。<br>  之所以喜欢这个节目，原因有很多。<br>  节目内容的真实性，每期内容的不确定性，还有游戏的刺激性都是吸引我的主要原因，但最重要的还是因为7个个性鲜明的主持人，也是因为他们让整个节目变得很具有吸引力和笑点。<br>  刘在石(蚂蚱)的智慧和独特的主持风格，池石镇(王大鼻子)的坚韧，金钟国(能力者)的power，HaHa的逗比式的夸张，宋智孝的呆萌和智慧，Gray的细致，还有李光洙(长颈鹿)的搞笑。每个人各有特色，在整个节目过程中都是主角，不可或缺。感觉这也是韩国综艺的一个优点，每一个都是主角，没有谁是主导，也没有谁是陪衬，看着很舒服。<br>通过running-man，我喜欢上了韩国的综艺，也开始慢慢去了解和欣赏韩国的影视节目，发现韩国的娱乐确实是做得比较好的，也值得我们国内的娱乐和综艺节目参考。</p><br>running-man在这一年给予了我很多快乐，会一直看下去。也希望这个节目能走的更久!<p></p>
+<div style="display:inline-block;width:100%"><br><div style="float:left;width:30%;"><br><img src="/imgs/running-1.png" alt="flighting"><br></div><br><div style="float:left;width:30%;position:relative;top:-29px;"><br><img src="/imgs/running-2.png" alt="flighting"><br></div><br><div style="float:left;width:30%;position:relative;top:-50px;"><br><img src="/imgs/running-3.png" alt="flighting"><br></div><br><div style="float:left;width:30%;"><br><img src="/imgs/running-4.png" alt="flighting"><br></div><br><div style="float:left;width:30%"><br><img src="/imgs/running-5.png" alt="flighting"><br></div><br><div style="float:left;width:30%;"><br><img src="/imgs/running-6.png" alt="flighting"><br></div><br><div style="width:30%;"><br><img src="/imgs/running-7.png" alt="flighting"><br></div><br><div clear="both"><br></div>
+</div>]]></content>
          
          
            
              
-              <breadCrumb title="CSS" url="http://gyyzyp.com/categories/CSS/"/>
+              <breadCrumb title="生活" url="http://gyyzyp.com/categories/%E7%94%9F%E6%B4%BB/"/>
           
         </display>
     </data>
