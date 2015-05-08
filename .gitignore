@@ -1,3 +1,6 @@
 .deploy/
 .idea/
-debug.log/
+debug.log
+db.json
+node_modules/
+
