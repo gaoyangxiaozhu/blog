@@ -60,6 +60,30 @@
     
     
   <url>
+    <loc>http://gyyzyp.com/2014/12/30/%E5%A4%96%E9%83%A8CSS%E6%A0%B7%E5%BC%8F%E7%9A%84%E8%AF%BB%E5%8F%96%E5%92%8C%E8%AE%BE%E5%AE%9A/</loc>
+    <lastmod>2015-03-18T05:55:03.000Z</lastmod>
+    <data>
+        <display>
+        <title>外部CSS样式的读取和设定</title>
+        <pubTime>2014-12-30T12:34:19.000Z</pubTime>
+        
+        <tag>CSS </tag>
+         
+         <content><![CDATA[<p>好久没有写博客了，是不是太懒了我?</p>
+<p>最近练习原生javascript时，其中有一次需要获取外部CSS样式文件中的相应元素的样式。不熟悉CSS样式的童鞋可能会尝试通过使用如document.getElementById(“id”).style.color来获取属性中设置的样式。<a id="more"></a>但这种方法只会获取元素style属性中设置的CSS样式，如果style中没有设置相关的样式,如color,那么document.getElementById(“id”).style方法的返回值就是空。也就是说不能通过这种方法来获得外部样式表中设置的样式.那怎样才能夺取外部样式呢?<br>如果要获取外部样式表中的样式,则需要用到window对象的getComputedStyle()方法。代码写法：getComputedStyle(id,null).color.但是可能会出现兼容问题，即在ie中可能不好使。两者兼容的写法为：<br>window.getComputedStyle?window.getComputedStyle(id,null).backgroundColor:id.currentStyle[“backgroundColor”];</p>
+<p>是不是很简单呢,主要为了加深记忆，顺便练手了~</p> ]]></content>
+         
+         
+           
+             
+              <breadCrumb title="CSS" url="http://gyyzyp.com/categories/CSS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://gyyzyp.com/2014/11/28/%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B/</loc>
     <lastmod>2015-03-18T05:55:03.000Z</lastmod>
     <data>
@@ -78,30 +102,6 @@
            
              
               <breadCrumb title="思考" url="http://gyyzyp.com/categories/%E6%80%9D%E8%80%83/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://gyyzyp.com/2014/12/30/%E5%A4%96%E9%83%A8CSS%E6%A0%B7%E5%BC%8F%E7%9A%84%E8%AF%BB%E5%8F%96%E5%92%8C%E8%AE%BE%E5%AE%9A/</loc>
-    <lastmod>2015-03-18T05:55:03.000Z</lastmod>
-    <data>
-        <display>
-        <title>外部CSS样式的读取和设定</title>
-        <pubTime>2014-12-30T12:34:19.000Z</pubTime>
-        
-        <tag>CSS </tag>
-         
-         <content><![CDATA[<p>好久没有写博客了，是不是太懒了我?</p>
-<p>最近练习原生javascript时，其中有一次需要获取外部CSS样式文件中的相应元素的样式。不熟悉CSS样式的童鞋可能会尝试通过使用如document.getElementById(“id”).style.color来获取属性中设置的样式。<a id="more"></a>但这种方法只会获取元素style属性中设置的CSS样式，如果style中没有设置相关的样式,如color,那么document.getElementById(“id”).style方法的返回值就是空。也就是说不能通过这种方法来获得外部样式表中设置的样式.那怎样才能夺取外部样式呢?<br>如果要获取外部样式表中的样式,则需要用到window对象的getComputedStyle()方法。代码写法：getComputedStyle(id,null).color.但是可能会出现兼容问题，即在ie中可能不好使。两者兼容的写法为：<br>window.getComputedStyle?window.getComputedStyle(id,null).backgroundColor:id.currentStyle[“backgroundColor”];</p>
-<p>是不是很简单呢,主要为了加深记忆，顺便练手了~</p> ]]></content>
-         
-         
-           
-             
-              <breadCrumb title="CSS" url="http://gyyzyp.com/categories/CSS/"/>
           
         </display>
     </data>
