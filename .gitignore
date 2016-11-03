@@ -1,4 +1,9 @@
-node_modules/
-public/
-db.json
+# Logs
+logs
+*.log
+
+public
 .deploy_git
+node_modules
+
+**/.DS_Store
