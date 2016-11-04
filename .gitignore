@@ -6,4 +6,5 @@ public
 .deploy_git
 node_modules
 
+db.json
 **/.DS_Store
