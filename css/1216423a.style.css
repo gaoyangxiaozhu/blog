@@ -68,7 +68,14 @@
     .summary > .summary-meta time:hover,
     .summary > .summary-meta span:hover,
     .summary > .summary-meta a:hover {
-      color: #3d3d3d; }
+      color: #3d3d3d;
+      text-decoration: underline; }
+
+.summary > .summary-exceprt {
+  margin-top: 15px; }
+
+.summary > .summary-read-more a:hover {
+  text-decoration: underline; }
 /************navbar*************/
 .loading {
   text-align: center;
@@ -310,10 +317,10 @@
  * Copyright (c) 2013 - 2014 by Hsiaoming Yang.
  */
 
-.yue {
+/*.yue {
   font: 400 18px/1.62 "Georgia", "Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
   color: #444443;
-}
+}*/
 
 .windows .yue {
   font-size: 16px;
@@ -328,7 +335,7 @@
   background-color: rgba(0,0,0,0.2);
 }
 
-.yue h1,
+/*.yue h1,
 .yue h2,
 .yue h3,
 .yue h4,
@@ -336,7 +343,7 @@
 .yue h6 {
   font-family: "Georgia", "Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", "SimSun", sans-serif;
   color: #222223;
-}
+}*/
 
 .yue h1 {
   font-size: 1.8em;
@@ -390,13 +397,13 @@
 .yue strong,
 .yue b {
   font-weight: 700;
-  color: #222223;
+  color: #4B4B53;
 }
 
 .yue em,
 .yue i {
   font-style: italic;
-  color: #222223;
+  color: #4B4B53;
 }
 
 .yue img {
@@ -757,7 +764,7 @@
             position: absolute;
             width: 1rem;
             top: 13px;
-            left: -16px;
+            left: calc(-2rem + 6px);
             border: 1px solid #9BB29D; } }
   .tree .tree-loader .tree-loading[_v-2eb0bb12] {
     display: block;
@@ -911,6 +918,7 @@
   display: block;
   height: 55px;
   width: 100%;
+  overflow: hidden;
   position: fixed;
   top: 0;
   border: 1px solid #eef2f8;
@@ -983,6 +991,7 @@
     #sidebar {
       left: 0;
       padding: 0 10px;
+      border-right: 1px solid #d9d9d9;
       -webkit-transform: translateZ(0) translate(-250px, 0);
               transform: translateZ(0) translate(-250px, 0);
       width: 250px; } }
@@ -1005,7 +1014,8 @@
     #onside {
       z-index: 4;
       display: block;
-      left: 70px; }
+      left: 40px;
+      top: 15px; }
       #onside.right {
         left: calc(100% - 100px + 30px); } }
   @media only screen and (min-width: 992px) {
@@ -1058,6 +1068,9 @@
   top: 0;
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   background-color: #000;
   opacity: 0;
   pointer-events: none; }
@@ -1093,6 +1106,10 @@
 
 
 /************navbar*************/
+.sidebar .sidebar-nav--profile .subtitle {
+  font-family: 'gooddog'; }
+
+.sidebar .sidebar-nav--profile,
 .sidebar .sidebar-nav--profile .author {
   font-size: 1.9rem;
   font-weight: 400px; }
@@ -1133,6 +1150,7 @@
     .sidebar .sidebar-buttons a:hover {
       color: #494949; }
   .sidebar .sidebar-buttons.self-page {
+    margin-top: 2rem;
     padding: 0; }
     .sidebar .sidebar-buttons.self-page .slider {
       display: block;
@@ -1141,12 +1159,8 @@
       left: 0px;
       height: 27px;
       width: 100%;
-      background-color: rgba(176, 176, 176, 0.72);
-      z-index: -1;
-      -webkit-transition: -webkit-transform .15s ease-in-out .1s;
-      transition: -webkit-transform .15s ease-in-out .1s;
-      transition: transform .15s ease-in-out .1s;
-      transition: transform .15s ease-in-out .1s, -webkit-transform .15s ease-in-out .1s; }
+      background-color: transparent;
+      z-index: -1; }
       .sidebar .sidebar-buttons.self-page .slider:before {
         content: '';
         display: inline-block; }
@@ -1155,7 +1169,8 @@
           -webkit-transition: -webkit-transform .15s ease-in-out;
           transition: -webkit-transform .15s ease-in-out;
           transition: transform .15s ease-in-out;
-          transition: transform .15s ease-in-out, -webkit-transform .15s ease-in-out; } }
+          transition: transform .15s ease-in-out, -webkit-transform .15s ease-in-out;
+          background-color: rgba(176, 176, 176, 0.72); } }
   @media only screen and (min-width: 992px) {
     .sidebar .sidebar-buttons.self-page {
       padding: 0 20px; }
@@ -1218,27 +1233,28 @@
           width: 40px; } }
 /************navbar*************/
 .header {
-  position: relative;
   padding: 0 20px;
-  color: #4a4a4a;
+  width: 100%;
   height: 55px;
+  color: #4a4a4a;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
   overflow: hidden; }
   .header--btn {
-    display: inline-block;
+    position: absolute;
     height: 55px;
     line-height: 55px;
     font-size: 2rem;
     color: #7A7E83;
-    cursor: pointer;
-    float: left; }
+    cursor: pointer; }
+    .header--btn:hover, .header--btn:active {
+      color: #7A7E83; }
   .header h1 {
-    float: right;
     text-align: center;
-    height: 100%;
+    height: 55px;
     line-height: 55px;
     font-size: 1.5rem;
-    padding: 0;
-    width: calc(100% - 60px); }
+    padding: 0; }
     .header h1 a {
       color: #7A7E83; }
       .header h1 a:hover {
@@ -3602,10 +3618,10 @@ body,
 * {
   box-sizing: border-box; }
 
+ul,
+li,
 p {
-  font-size: 16px;
-  color: #5d686f;
-  margin-bottom: 1.6rem; }
+  color: #5d686f; }
 
 hr {
   border-color: #FFFFFF; }
@@ -3613,22 +3629,26 @@ hr {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   margin-bottom: 5px;
   margin-top: 0px;
   letter-spacing: -.04em;
   font-family: 'Open Sans',sans-serif;
   line-height: 1.45em;
-  color: #4a4a4a; }
+  color: #4a4a4a;
+  -webkit-tap-highlight-color: transparent; }
   h1 a,
   h2 a,
   h3 a,
-  h4 a {
+  h4 a,
+  h5 a {
     color: #4a4a4a; }
     h1 a:hover,
     h2 a:hover,
     h3 a:hover,
-    h4 a:hover {
+    h4 a:hover,
+    h5 a:hover {
       color: black; }
 
 h1,
@@ -3683,6 +3703,9 @@ textarea {
   outline: none;
   -webkit-tap-highlight-color: transparent; }
 
+dl, ol, p, ul {
+  margin: 0 0 1.75rem; }
+
 @font-face {
   font-family: 'open_sans';
   src: url(/fonts/b44081f9.opensans-light-webfont.woff2) format("woff2"), url(/fonts/f9bfb4af.opensans-light-webfont.woff) format("woff");
@@ -3730,6 +3753,12 @@ textarea {
   src: url(/fonts/371715f0.opensans-bolditalic-webfont.woff2) format("woff2"), url(/fonts/eb4706fe.opensans-bolditalic-webfont.woff) format("woff");
   font-weight: 700;
   font-style: italic; }
+
+@font-face {
+  font-family: 'gooddog';
+  src: url(/fonts/46f015ad.gooddog-webfont.woff2) format("woff2"), url(/fonts/b82514b8.gooddog-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal; }
 
 #blog {
   position: absolute;
